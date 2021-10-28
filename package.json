@@ -1,0 +1,24 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "A CMS for employee tracking, using Node, inquirer and MYSQL. Challenge 12 for bootcamp spot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hmndtyphn/employee-tracker.git"
+  },
+  "keywords": [],
+  "author": "Jared Elliott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hmndtyphn/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/Hmndtyphn/employee-tracker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "node": "^17.0.1"
+  }
+}

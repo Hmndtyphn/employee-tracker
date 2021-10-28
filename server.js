@@ -19,10 +19,10 @@ const db = mysql.createConnection(
       password: 'Herc0923',
       database: 'employee'
     },
-    console.log('Connected to the election database.')
+    console.log('Connected to the employee database.')
   );
   
-    db.query(`SELECT * FROM candidates`, (err, rows) => {
+    db.query(`SELECT * FROM employee`, (err, rows) => {
        console.log(rows);
   });
   

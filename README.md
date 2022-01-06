@@ -30,7 +30,7 @@
   #### Contact Me @: Jared.elliott09@gmail.com<br>
   #### GitHub Profile: Hmndtyphn
   #### GitHub Repo Link: https://github.com/Hmndtyphn/employee-tracker
-  #### Walkthrough video link: 
+  #### Walkthrough video link: https://watch.screencastify.com/v/RiDm1vkoQQEsdmLef7ft
 
   <p align="center">
   <img src="assets/images/Screen Shot 2022-01-06 at 3.56.27 PM.png" width="1000" title="hover text" alt="">

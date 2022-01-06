@@ -6,7 +6,7 @@ const consoleTable = require('console.table');
 
 
 // Connect to database
-let connection = mysql.createConnection(
+const connection = mysql.createConnection(
     {
       host: 'localhost',
       port: 3306,
@@ -25,7 +25,7 @@ connection.connect(function (err){
 
 // Welcome Message
 console.table(
-    " EMPLOYEE TRACKER"
+    "EMPLOYEE TRACKER"
 )
 
 // Initial action questions prompt
@@ -62,7 +62,6 @@ const initialAction = async() => {
             case 'Add Employees':
                 employeeAdd();
                 break
-
             case 'Add Departments':
                 departmentAdd();
                 break
@@ -144,9 +143,9 @@ const employeeAdd = async() => {
     try {
         console.log('Employee Add');
 
-        let roles = await connection.query("SELECT * FROM role");
+        var roles = await connection.query("SELECT * FROM role");
 
-        let managers = await connection.query("SELECT * FROM employee");
+        var managers = await connection.query("SELECT * FROM employee");
 
         let answer = await inquirer.prompt([
             {
@@ -199,7 +198,7 @@ const employeeAdd = async() => {
     };
 }
 
-// Selection to add a new department.
+// Add a new department.
 const departmentAdd = async() => {
     try {
         console.log('Department Add');
@@ -208,7 +207,7 @@ const departmentAdd = async() => {
             {
                 name: 'deptName',
                 type: 'input',
-                message: 'What is the name of your new department?'
+                message: 'What is the name of the department you want to add?'
             }
         ]);
 
@@ -225,7 +224,7 @@ const departmentAdd = async() => {
     };
 }
 
-// Selection to add a new role.
+// Add a new role.
 const roleAdd = async() => {
     try {
         console.log('Role Add');
@@ -277,7 +276,7 @@ const roleAdd = async() => {
     };
 }
 
-// Selection to update a roll for a specific employee.
+// Update employee role
 const employeeUpdate = async() => {
     try {
         console.log('Employee Update');
